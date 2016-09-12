@@ -1,6 +1,6 @@
 # experiment-validating-mocks
 
-I came across some unit tests that were testing data contracts of a class, but the higher-level integration tests were using mocs that did not abide by the same data contracts.  This made the integration tests meaningless, as they were testing states that would never exist, according to the unit tests.
+I came across some unit tests that were testing data contracts of a class, but the higher-level integration tests were using mocks that did not abide by the same data contracts.  This made the integration tests meaningless, as they were testing states that would never exist, according to the unit tests.
 
 Rather than trying to figure out manually which mocks were not valid, I encapsulated and exposed the unit test assertions and used them to validate the integration test mocks.
 
