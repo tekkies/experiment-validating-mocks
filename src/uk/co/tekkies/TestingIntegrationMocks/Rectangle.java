@@ -1,11 +1,12 @@
 package uk.co.tekkies.TestingIntegrationMocks;
 
-/**
- * Created by ajoiner on 12/09/2016.
- */
-public class Rectangle implements Shape {
+public class Rectangle extends Shape {
+    public Rectangle(int width, int height) {
+        super(width, height);
+    }
+
     @Override
-    public float CalculateArea() {
-        return 0;
+    public float calculateArea() {
+        return width * height;
     }
 }
