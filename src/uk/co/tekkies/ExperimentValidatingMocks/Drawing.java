@@ -1,4 +1,4 @@
-package uk.co.tekkies.TestingIntegrationMocks;
+package uk.co.tekkies.ExperimentValidatingMocks;
 
 import java.util.ArrayList;
 

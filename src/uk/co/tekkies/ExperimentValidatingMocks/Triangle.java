@@ -1,6 +1,4 @@
-package uk.co.tekkies.TestingIntegrationMocks;
-
-import uk.co.tekkies.TestingIntegrationMocks.Shape;
+package uk.co.tekkies.ExperimentValidatingMocks;
 
 public class Triangle extends Shape {
 

@@ -1,4 +1,4 @@
-package uk.co.tekkies.TestingIntegrationMocks;
+package uk.co.tekkies.ExperimentValidatingMocks;
 
 
 public abstract class Shape {
