@@ -11,21 +11,21 @@ import static org.mockito.Mockito.when;
 
 public class DrawingTest {
     @Test
-    public void calculateAreaOfEmptyTriangle() {
-        //given
-        Shape emptyTriangle = mock(Triangle.class);
-        when(emptyTriangle.calculateArea()).thenReturn((float)0.0);
+    public void testCalculateAreaOfDrawingShapes() {
+        //Given
+        Shape triangle = mock(Triangle.class);
+        //Missing: when(triangle.calculateArea()).thenReturn((float)0.1);
+
+        //Confirm the mock is legal before continuing the test
+        TriangleTest.assertValidTriangle(triangle);
+
         Drawing drawing = new Drawing();
-        drawing.add(emptyTriangle);
+        drawing.add(triangle);
 
-        //Check that the mocked empty triangle behaves the same way as the
-        //empty triangle that we unit tested
-        TriangleTest.assertValidEmptyTriangle(emptyTriangle);
-
-        //when
+        //When
         float area = drawing.calculateArea();
 
-        //then
-        Assert.assertEquals(0.0, area, 0.001);
+        //Then
+        Assert.assertTrue(area > 0.0);
     }
 }
